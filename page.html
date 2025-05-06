@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal - Muhammad Saad Saeed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+    .header {
+      background-color: #007BFF;
+      padding: 15px;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+    }
+    .sidebar {
+      height: 100vh;
+      width: 150px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #343a40;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #ddd;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .student-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .student-info img {
+      width: 80px;
+      height: 100px;
+      object-fit: cover;
+      border: 1px solid #000;
+      margin-top: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a { float: left; }
+      .content { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  Student Portal
+</div>
+
+<div class="sidebar">
+  <a href="#">Dashboard</a>
+  <a href="#">My Profile</a>
+  <a href="#">My Courses</a>
+  <a href="#">Exam Schedule</a>
+  <a href="#">Logout</a>
+</div>
+
+<div class="content">
+
+  <div class="card">
+    <h2>My Profile</h2>
+    <div class="student-info">
+      <p><strong>Name:</strong> Muhammad Saad Saeed</p>
+      <p><strong>Student ID:</strong> 123456789</p>
+      <img src="image.jpg" alt="Passport Photo">
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>My Courses</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Course Code</th>
+          <th>Instructor</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Information and Communication Technology (ICT)</td>
+          <td>ICT101</td>
+          <td>xyz</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Calculus</td>
+          <td>MATH102</td>
+          <td>xyz</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>PHY103</td>
+          <td>xyz</td>
+          <td>3+1</td>
+        </tr>
+        <tr>
+          <td>Programming Fundamentals (PF)</td>
+          <td>CS104</td>
+          <td>xyz</td>
+          <td>4+1</td>
+        </tr>
+        <tr>
+          <td>English Communication</td>
+          <td>ENG105</td>
+          <td>xyz</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Islamic Studies</td>
+          <td>ISL106</td>
+          <td>xyz</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Exam Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Room</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mathematics</td>
+          <td>May 5, 2025</td>
+          <td>10:00 AM - 1:00 PM</td>
+          <td>Room A1</td>
+        </tr>
+        <tr>
+          <td>Computer Science</td>
+          <td>May 7, 2025</td>
+          <td>10:00 AM - 1:00 PM</td>
+          <td>Room B2</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>May 9, 2025</td>
+          <td>10:00 AM - 12:00 PM</td>
+          <td>Room C3</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>May 11, 2025</td>
+          <td>10:00 AM - 1:00 PM</td>
+          <td>Room D4</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
